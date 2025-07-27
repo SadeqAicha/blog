@@ -1,0 +1,163 @@
+:root{
+    --first-color:#e4e05c;
+    --second-color: #eee;
+    --third-color: #212529;
+}
+body{
+    background-color: #2f333b !important;
+}
+*{
+    text-decoration: none !important;
+    transition: 0.1s;
+}
+
+/*Start navbar*/
+nav .container li{
+    margin: 0 10px;
+}
+.nav-item *{
+    border-radius: 5px;
+    text-align: center;
+}
+.nav-item *:hover{
+    color: var(--third-color) !important;
+    background-color: var(--first-color);
+}
+nav ul{
+    padding: 10px;
+}
+/*End navbar*/
+
+/*Start Content*/
+.content {
+    color: var(--second-color);
+    margin: 40px;
+}
+/*Start Posts Bar*/
+.content .post{
+    background-color: var(--third-color);
+    padding: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.content .post *{
+    color: var(--second-color) ;
+}
+.post .post-image{
+    width: 100%;
+}
+.post .post-image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+.post .post-title{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.post .post-details .post-info *{
+    color: rgba(255, 255, 255, 0.363) !important;
+}
+.post .post-details .post-info span{
+    margin-left: 10px;
+
+}
+.post .post-details .post-info span i{
+    margin-right: 5px;
+}
+.post .post-details button.btn-custom{
+    background: transparent;
+    border-radius: 0;
+    font-size: 16px !important;
+    border: solid 1px var(--first-color);
+    width: 130px;
+    margin: 5px 0;
+}
+.post .post-details button.btn-custom:hover{
+    background: var(--first-color);
+    color: var(--third-color) !important;
+}
+p.read_mode_text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+p.read_mode_text.expanded{
+    -webkit-line-clamp: unset;
+}
+/*End Posts Bar*/
+
+/*Start Side Bar*/
+/*Start Categories*/
+
+.categories{
+    background-color: var(--third-color);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.categories h4{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.categories ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.categories ul li{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.categories ul li a{
+    color: inherit !important;
+}
+.categories ul li:hover{
+    background: var(--first-color);
+    color: var(--third-color) ;
+}
+/*End Categories*/
+
+/*Start Latest Posts*/
+.last-posts{
+    background-color: var(--third-color);
+    padding: 20px;
+}
+.last-posts h4{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.last-posts ul {
+    list-style: none;
+    padding: 0;
+}
+.last-posts ul li{
+    padding: 10px;
+    margin-bottom: 5%;
+    border-bottom: 1px solid var(--first-color);
+}
+.last-posts ul li:last-child{
+    border-bottom: none;
+}
+.last-posts ul li a{
+    color: var(--second-color);
+    display: flex;
+}
+.last-posts ul li img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+/*End Latest Posts*/
+/*End Side Bar*/
+/*End Content*/
+
+footer{
+    background: var(--third-color);
+    color: var(--second-color);
+    padding: 20px;
+    text-align: center;
+}
